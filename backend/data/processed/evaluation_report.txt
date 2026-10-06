@@ -1,0 +1,111 @@
+{
+  "processed_rows": 705,
+  "missing_values": {
+    "ph": 0,
+    "conductance": 0,
+    "dissolved_oxygen": 0,
+    "temperature": 0
+  },
+  "duplicate_rows": 0,
+  "scenarios": {
+    "baseline": {
+      "states": {
+        "ph": "moderate",
+        "conductance": "moderate",
+        "dissolved_oxygen": "moderate",
+        "temperature": "moderate"
+      },
+      "posterior": {
+        "chemical": {
+          "low": 0.16,
+          "moderate": 0.68,
+          "high": 0.16
+        },
+        "biological": {
+          "low": 0.16,
+          "moderate": 0.68,
+          "high": 0.16
+        },
+        "overall_risk": {
+          "low": 0.085824,
+          "moderate": 0.299072,
+          "high": 0.48816,
+          "critical": 0.126944
+        }
+      },
+      "utilities": {
+        "normal_use": -12.834,
+        "monitor_retest": 2.759,
+        "treat": 10.936,
+        "avoid_restrict": 7.838
+      },
+      "recommendation": "treat"
+    },
+    "low_state": {
+      "states": {
+        "ph": "low",
+        "conductance": "low",
+        "dissolved_oxygen": "low",
+        "temperature": "low"
+      },
+      "posterior": {
+        "chemical": {
+          "low": 0.16,
+          "moderate": 0.68,
+          "high": 0.16
+        },
+        "biological": {
+          "low": 0.04,
+          "moderate": 0.21,
+          "high": 0.75
+        },
+        "overall_risk": {
+          "low": 0.062448,
+          "moderate": 0.259264,
+          "high": 0.4888,
+          "critical": 0.189488
+        }
+      },
+      "utilities": {
+        "normal_use": -15.739,
+        "monitor_retest": 1.826,
+        "treat": 11.557,
+        "avoid_restrict": 9.29
+      },
+      "recommendation": "treat"
+    },
+    "high_state": {
+      "states": {
+        "ph": "high",
+        "conductance": "high",
+        "dissolved_oxygen": "high",
+        "temperature": "high"
+      },
+      "posterior": {
+        "chemical": {
+          "low": 0.04,
+          "moderate": 0.21,
+          "high": 0.75
+        },
+        "biological": {
+          "low": 0.78,
+          "moderate": 0.18,
+          "high": 0.04
+        },
+        "overall_risk": {
+          "low": 0.081028,
+          "moderate": 0.268916,
+          "high": 0.514272,
+          "critical": 0.135784
+        }
+      },
+      "utilities": {
+        "normal_use": -13.774,
+        "monitor_retest": 2.527,
+        "treat": 11.225,
+        "avoid_restrict": 8.346
+      },
+      "recommendation": "treat"
+    }
+  }
+}
